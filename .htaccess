@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+   RewriteEngine on
+   
+   RewriteRule ^home$ form.php
+   RewriteRule ^cadastro$ cadastro.php
+   RewriteRule ^perfil-([0-9]+)$ perfil.php?id_perfil=$1
+   RewriteRule ^verMais-([0-9]+)$ verMais.php?id=$1
+   RewriteRule ^json/([^/]+)/([^/]+)$ json.php?service=$1&parameter=$2
+
+</IfModule>
